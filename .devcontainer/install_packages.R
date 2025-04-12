@@ -8,7 +8,7 @@
 # Set the working directory
 setwd("./settings/")
 # Required the remotes package
-install.packages("remotes", repos = "http://cran.rstudio.com/")
+install.packages(c("remotes", repos = "http://cran.rstudio.com/"), 'rmarkdown')
 #---- Load list of packages
 # Set the jq query
 jq_command <- 'jq -r ".packages[] |  [.package, .version] | @tsv" packages.json'

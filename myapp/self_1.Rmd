@@ -1,0 +1,135 @@
+---
+title: "Tutorial"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+# Self Assessment: Session 1
+
+## Instructions
+
+**Welcome!**
+
+*This app is still very nascent, please alert me of any errors or unexpected behaviour.*
+
+If this is your first time in DB Browser for SQLite, the following instructions may help:
+
+#### 1) Load Database
+- Open DB Browser for SQLite
+- Go to File > Open Database
+- Navigate to your chinook.db 
+	- This will be wherever you cloned the GH Repo (within the **SQL** folder)
+	- ![8338a7f3d843398c3b7b395eae3e1994.png](:/9bf5034c5dbf4aa6a9f243fc26800c01)
+
+#### 2) Configure your windows
+By default, DB Browser for SQLite has three windows, with four tabs in the main window and three tabs in the bottom right window
+- Window 1: Main Window (Centre)
+	- Stay in the Database Structure tab for now
+- Window 2: Edit Database Cell (Top Right)
+- Window 3: Remote (Bottom Right)
+	- Switch this to DB Schema tab (very bottom)
+
+Your screen should look like this (or very similar)
+![4159f1cda9ef0b41aa174e161164edb8.png](:/5b830208e10f4060828db394a566f1c0)
+
+#### 3) The chinook.db
+There are 11 tables in the Main Window:
+
+1. Album
+2. Artist
+3. Customer
+4. Employee
+5. Genre
+6. Invoice
+7. InvoiceLine
+8. MediaType
+9. Playlist
+10. PlaylistTrack
+11. Track
+
+Switch to the Browse Data tab, Album is selected by default
+ <img src=":/2be5c3dfb42345fa85c53fd87ee74cd0" width="900"> 
+
+
+Using the table drop down at the top left, explore some of the contents of the database
+ <img src=":/bf58ac331e944dacb07b0be159c41638" width="200"> 
+ 
+**Click Next Topic when you're ready to begin**
+
+## Commenting Out SQL Code
+
+```{r code-comment, echo=FALSE}
+question("How do you comment code out in SQL?",
+  answer("`# SELECT...`"),
+  answer("`-- SELECT...`", correct = TRUE),
+  answer("`/* SELECT... */`", correct = TRUE),
+  answer("`// SELECT...`"),
+  random_answer_order = TRUE,
+  allow_retry = TRUE
+)
+```
+
+## Data Types
+
+```{r data-type, echo=FALSE}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
+
+## Relationships
+
+```{r relationships, echo=FALSE}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
+## Primary Keys
+
+```{r pks, echo=FALSE}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
+
+
